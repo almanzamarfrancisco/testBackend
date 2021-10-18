@@ -4,7 +4,6 @@ const Op = db.Sequelize.Op;
 
 // Create and Save a new News
 exports.create = (req, res) => {
-
 };
 
 // Retrieve all Newss from the database.

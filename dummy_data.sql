@@ -33,3 +33,25 @@ VALUES
   ("431-7194 Vivamus Street","7","54D874E4-9316-C8BE-BFC2-9B5C0E42572D","P.O. Box 840, 2231 Iaculis Rd.","Vulputate Ullamcorper LLP","feugiat placerat velit. Quisque varius. Nam"),
   ("Ap #812-6176 Egestas. Rd.","19","3AE666C7-5AD6-0385-E449-92AC5C7E7C08","Ap #199-227 Aenean St.","At Iaculis Institute","nisl sem, consequat"),
   ("2857 Id, Rd.","19","3EE3D5E5-1CAC-0942-BAEA-33E28F245A7E","479-2071 Ultrices Avenue","Elit Erat Associates","sit");
+
+DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `users`;
+
+CREATE TABLE `users` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `name` varchar(255) default NULL,
+  `username` varchar(255) default NULL,
+  `email` varchar(255) default NULL,
+  `password` varchar(255) default NULL,
+  `createdAt` TIMESTAMP,
+  `updatedAt` TIMESTAMP,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `users` (`name`, `username`,`email`,`password`)
+VALUES
+  ("Ahmed Barnett", "AhmBar","sit.amet@vehiculaaliquetlibero.com", "12341234"),
+  ("Thaddeus Bowen", "ThaBow","et@libero.co.uk", "12341234"),
+  ("Nicole Graves", "NicGra","ultrices.sit@porttitorscelerisqueneque.ca", "12341234"),
+  ("Scott Chapman", "ScoCha","semper.pretium@blanditnamnulla.edu", "12341234"),
+  ("Galena Becker", "GalBec","orci.consectetuer@vestibulumaccumsan.edu", "12341234");
