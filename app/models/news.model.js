@@ -1,19 +1,26 @@
 module.exports = (sequelize, Sequelize) => {
   const News = sequelize.define("news", {
-    title: {
+    id: {
+      type: Sequelize.STRING,
+      primaryKey: true
+    },
+    address: {
       type: Sequelize.STRING
     },
-    content: {
+    list: {
       type: Sequelize.STRING
     },
-    source: {
+    guid: {
       type: Sequelize.STRING
     },
-    date: {
+    address1: {
       type: Sequelize.STRING
     },
-    published: {
-      type: Sequelize.BOOLEAN
+    company: {
+      type: Sequelize.STRING
+    },
+    text: {
+      type: Sequelize.STRING
     }
   });
 

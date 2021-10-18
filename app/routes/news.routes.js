@@ -9,13 +9,14 @@ router.use(function timeLog (req, res, next) {
   console.log('Time: ', Date.now())
   next()
 })
-// define the home page route
 router.get('/', (req, res) => {
+  console.log('Welcome')
   res.send('Welcome')
 })
-// define the about route
-router.get('/about', (req, res) => {
-  res.send('About')
+router.get('/find_all', (req, res) => {
+  console.log('Ahhh la verde ahahahah')
+  res.send('Ahhh la verde ahahahah')
+  return news_controller.findAll()
 })
 // router.get('/create', news_controller.create)
 

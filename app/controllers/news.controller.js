@@ -4,13 +4,12 @@ const Op = db.Sequelize.Op;
 
 // Create and Save a new News
 exports.create = (req, res) => {
-  console.log("No maaahhh")
-  res.send('Alvvvvv!!!!!')
+
 };
 
 // Retrieve all Newss from the database.
 exports.findAll = (req, res) => {
-  
+	res.send('NOT IMPLEMENTED: DFASDFS');
 };
 
 // Find a single News with an id
